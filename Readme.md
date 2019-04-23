@@ -17,9 +17,29 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 * _CSS_
 
 ## Specifications
-| Specs | Input | Output |
-| :--------------     | :-------------- | :-------------- |
-| 
+_The program doesn't recognize non-alphabetical characters as they aren't consonants or vowels._
+  *Input: 2010
+  *Expected output: 2010
+
+_The program adds "ay" at the end of the word beginning with a vowel._
+  *Input: "leap"
+  *Expected output: "eaplay"
+
+_The program recognizes vowels in a multiple-word sentence._
+  *Input: "is not a leap year"
+  *Expected output: "isyay otnay ayay eaplay earyay"
+
+_The program recognizes all vowels in a multiple-word sentence, even if it's inconsistent._
+  *Input: "Is NoT a leap yEAr"
+  *Expected output: "isyay otnay ayay eaplay earyay"
+
+_The program recognizes a single vowel in a multiple-character word._
+  *Input: "not"
+  *Expected output: "otnay"
+
+_The program recognizes a single vowel, lower or uppercase._
+  *Input: "a"
+  *Expected output: "ayay"
 
 ## Known Bugs
 
@@ -27,7 +47,7 @@ _{Are there issues that have not yet been resolved that you want to let users kn
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_Email_
 
 ## Technologies Used
 
