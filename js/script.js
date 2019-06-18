@@ -1,15 +1,15 @@
 var translation = function(sentence){
-  var newsentence = sentence.split('')
-  var pig = ["-ay"]
-  for(x=0; x < newsentence.length; x++){
-    pig.forEach(function(letter){
-     if(newsentence[x] === letter){
-       newsentence[x]= "-ay";
+  var splitstring = sentence.split('')
+  var pig = ["-way"]
+  for(x=0; x < splitstring.length; x++){
+    vowels.forEach(function(letter){
+     if(splitstring[x] === letter){
+       splitstring[x]= "-way";
      };
    });
  }
-console.log(newsentence)
-return newsentence;
+console.log(splitstring)
+return splitstring;
 }
 
 
@@ -18,6 +18,7 @@ $(document).ready(function() {
   $("form#pig-latin").submit(function(event) {
     event.preventDefault();
     var pig = parseInt($("input#year").val());
+
 
 
     var words = $('#words').val()
