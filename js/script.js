@@ -1,6 +1,6 @@
 var translation = function(sentence){
   var vowels = ["a","e","i","o","u"]
-  var splitstring = sentence.split('')
+  var splitstring = sentence.split("")
   var pig = ["-way"]
   for(x=0; x < splitstring.length; x++){
     vowels.forEach(function(letter){
@@ -8,6 +8,7 @@ var translation = function(sentence){
        splitstring[0]= "-way";
      };
    });
+    output = splitstring.join("")+"way"
  }
 console.log(splitstring)
 return splitstring;
@@ -24,9 +25,9 @@ $(document).ready(function() {
 
     var words = $('#words').val()
 
-    var newsentence = translation(words)
+    var splitstring = translation(words)
 
-    $('#output').append(newsentence)
+    $('#output').append(splitstring)
 
     $("#display").append(x);
 })
