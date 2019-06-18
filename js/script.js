@@ -1,10 +1,11 @@
 var translation = function(sentence){
+  var vowels = ["a","e","i","o","u"]
   var splitstring = sentence.split('')
   var pig = ["-way"]
   for(x=0; x < splitstring.length; x++){
     vowels.forEach(function(letter){
-     if(splitstring[x] === letter){
-       splitstring[x]= "-way";
+     if(splitstring[0] === letter){
+       splitstring[0]= "-way";
      };
    });
  }
