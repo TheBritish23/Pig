@@ -21,7 +21,7 @@ _The program doesn't recognize non-alphabetical characters as they aren't conson
   *Input: 2010
   *Expected output: 2010
 
-_The program adds "-way" at the end of the word beginning with a vowel._
+_The program adds "way" at the end of the word beginning with a vowel._
   *Input: "leap"
   *Expected output: "eaplay"
 

@@ -2,6 +2,7 @@ var translation = function(sentence){
   var vowels = ["a","e","i","o","u"]
   var splitstring = sentence.split("")
   var pig = ["way"]
+  var newWord = newWord.slice("x", newWord.length) + newWord(0,3)+"ay"
   for(x=0; x < splitstring.length; x++){
     vowels.forEach(function(letter){
       console.log(letter)
