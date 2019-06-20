@@ -3,10 +3,10 @@ var translation = function(sentence){
   var splitstring = sentence.split("")
   var pig = ["way"]
   for(x=0; x < splitstring.length; x++){
-  var newWord = splitstring.slice(x, splitstring.length) + splitstring.slice(0,x) + "ay"
     vowels.forEach(function(letter){
       console.log(letter)
-     if(splitstring[0] === letter){
+     if(splitstring[x] === letter){
+       var newWord = splitstring.slice(x, splitstring.length) + splitstring.slice(0,x) + "ay"
        splitstring.push("way");
        x = splitstring.length
      };
