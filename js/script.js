@@ -2,8 +2,8 @@ var translation = function(sentence){
   var vowels = ["a","e","i","o","u"]
   var splitstring = sentence.split("")
   var pig = ["way"]
-  var newWord = newWord.slice("x", newWord.length) + newWord(0,3)+"ay"
   for(x=0; x < splitstring.length; x++){
+  var newWord = splitstring.slice(x, splitstring.length) + splitstring.slice(0,x) + "ay"
     vowels.forEach(function(letter){
       console.log(letter)
      if(splitstring[0] === letter){
